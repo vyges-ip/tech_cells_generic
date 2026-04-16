@@ -1,0 +1,26 @@
+schema_version: "vyges-upstream-v1"
+upstream:
+  type: "repository"
+  source: https://github.com/pulp-platform/tech_cells_generic
+  commit: fca524a1174f6363ba0e778f37b9f398257d4b8f
+  extracted_at: "2026-04-16T04:22:21Z"
+import:
+  rtl:
+    - path: "src/rtl"
+      map_to: "rtl"
+    - path: "src/fpga"
+      map_to: "fpga"
+    - path: "src/deprecated"
+      map_to: "deprecated"
+    - path: "src/tc_pwr.sv"
+      map_to: "rtl/tc_pwr.sv"
+  license:
+    - path: "LICENSE"
+  readme:
+    - path: "README.md"
+license:
+  spdx: SHL-0.51
+  notes: |
+    Solderpad Hardware License 0.51 — Apache-2.0 opt-in clause.
+    Compatible with Vyges Apache-2.0 catalog policy.
+  file: LICENSE
